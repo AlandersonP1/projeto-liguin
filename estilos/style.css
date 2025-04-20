@@ -21,7 +21,7 @@ main {
     width: 100vw;
 }
 
-section#loguin {
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,6 +33,9 @@ section#loguin {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width .3s, height 1s;
+    transition-timing-function: ease;
 }
 
 section > div#imagem {
@@ -42,7 +45,7 @@ section > div#imagem {
     height: 200px;
 }
 
-section#loguin > div#formulario {
+section#login > div#formulario {
     display: none;
     padding: 10px;
 }
