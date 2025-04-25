@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loguin</title>
+    <title>Login</title>
+   <link rel="stylesheet" href= "https://fonts.google.com/icons?selected=Material+Symbols+Out
+    lined:developer_guide:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=developer+guide&icon.size=24&icon.color=%231f1f1f">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 
@@ -17,8 +19,26 @@
         <div id="formulario">
             <h1>Loguin</h1>
             <p>Seja bem-vindo(a) novamente. Faça loguin para acessar sua conta e fazer as configurações no seu ambiente </p>
-            <form action="login.php" method="post"></form>
+            <form action="login.php" method="post">
+            <div class=" campo">
+                <i class="material-icons">person</i>
 
+                <input type="email" name ="login" id="ilogin" placeholder="seu email" autocomplete="email" required maxlength="30">
+                <label for="iloguin">Loguin</label>
+
+            </div>
+
+            <div class="campo">
+                <i class="material.icons "> vpn_key</i>
+                <input type="password" name="senha" id="senha" placeholder="sua senha" autocomplete="current-password" required minlength="18" maxlength="20">
+                <label for="isenha">Senha</label>
+
+            </div>
+            <input type="submit" value="Entrar">
+            <a href="esqueci.html">
+                Esqueci a senha <i class="material-icons">email</i>
+            </a>
+        </form>
         </div>
 
     </section>
